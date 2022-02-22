@@ -44,26 +44,26 @@ class WeaponItem extends Weapon {
 
 const weaponData: WeaponData[] = [
   {
-    id: "axe",
-    name: "Axe",
+    id: "glock",
+    name: "Glock",
     attack: 20,
     price: 1000,
   },
   {
-    id: "sword",
-    name: "Sword",
+    id: "ump-45",
+    name: "UMP 45",
     attack: 30,
     price: 2000,
   },
   {
-    id: "dagger",
-    name: "Dagger",
+    id: "magnum-sniper-rifle",
+    name: "Magnum Sniper Rifle",
     attack: 40,
     price: 3000,
   },
   {
-    id: "mace",
-    name: "Mace",
+    id: "m-249",
+    name: "M249",
     attack: 50,
     price: 4000,
   },

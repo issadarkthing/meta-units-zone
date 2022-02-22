@@ -9,7 +9,7 @@ export default class extends Command {
   name = "inventory";
   description = "show player's inventory";
   aliases = ["i", "inv"];
-  maxWeapon = 2; // max equipped weapon
+  maxWeapon = 1; // max equipped weapon
 
   async exec(msg: Message, args: string[]) {
 

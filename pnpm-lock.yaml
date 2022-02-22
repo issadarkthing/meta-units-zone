@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@jiman24/commandment': ^0.4.0
   '@jiman24/discordjs-button': ^0.1.0
-  '@jiman24/discordjs-rpg': ^2.3.6
+  '@jiman24/discordjs-rpg': ^3.0.1
   '@types/common-tags': ^1.8.1
   '@types/luxon': ^2.0.8
   common-tags: ^1.8.2
@@ -17,7 +17,7 @@ specifiers:
 dependencies:
   '@jiman24/commandment': 0.4.0
   '@jiman24/discordjs-button': 0.1.0
-  '@jiman24/discordjs-rpg': 2.3.6
+  '@jiman24/discordjs-rpg': 3.0.1
   common-tags: 1.8.2
   discord.js: 13.6.0
   dotenv: 10.0.0
@@ -79,8 +79,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@jiman24/discordjs-rpg/2.3.6:
-    resolution: {integrity: sha512-3xeVMhSpkRkkVB2QN6jvOOc+uAFSvlRPAD+asjQK7KLnTKiMlhFDfobhIZ7KIs6u0q2ufw/cxynqJVADXKVMhw==}
+  /@jiman24/discordjs-rpg/3.0.1:
+    resolution: {integrity: sha512-PDVmZwQcvCBOCFJIRghh16JZAdNQfpSkV890r+LmZzJfGLG+gWk4QlwNImjztjhCFSxx+U1WTaDAHaInU0Ufkw==}
     dependencies:
       common-tags: 1.8.2
       discord.js: 13.6.0

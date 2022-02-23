@@ -5,7 +5,7 @@ specifiers:
   '@jiman24/discordjs-button': ^0.1.0
   '@jiman24/discordjs-pagination': ^0.0.3
   '@jiman24/discordjs-prompt': ^0.0.1
-  '@jiman24/discordjs-rpg': ^3.1.0
+  '@jiman24/discordjs-rpg': ^3.1.1
   '@types/common-tags': ^1.8.1
   '@types/luxon': ^2.0.8
   common-tags: ^1.8.2
@@ -21,7 +21,7 @@ dependencies:
   '@jiman24/discordjs-button': 0.1.0
   '@jiman24/discordjs-pagination': 0.0.3
   '@jiman24/discordjs-prompt': 0.0.1
-  '@jiman24/discordjs-rpg': 3.1.0
+  '@jiman24/discordjs-rpg': 3.1.1
   common-tags: 1.8.2
   discord.js: 13.6.0
   dotenv: 10.0.0
@@ -104,8 +104,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@jiman24/discordjs-rpg/3.1.0:
-    resolution: {integrity: sha512-wzYi0pk0TdEIYZAh9SPw5UtBfgJxSgUJ8xPisCrQTlSpcqNMxSmVfM/Xc5dJiW0DxURxaZ20bFf8kWJtUll/Sw==}
+  /@jiman24/discordjs-rpg/3.1.1:
+    resolution: {integrity: sha512-ewZ2n6K4T+FqQUakJ89yLbD2bAXLHOzFx+sRAcgwAmrbpCtc4mtOrbbRYEq8pRFVRTdGicaiGVzE/0uNCnoq+g==}
     dependencies:
       common-tags: 1.8.2
       discord.js: 13.6.0

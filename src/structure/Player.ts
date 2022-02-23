@@ -78,9 +78,11 @@ export class Player extends PlayerRPG {
 
   show() {
     const profile = super.show();
-    const armorIndex = 8;
 
-    profile.spliceFields(armorIndex, 2);
+    // remove armor, weapon, skill and pet attribute
+    profile.spliceFields(6, 4);
+
+    profile.addField("\u200b", "\u200b");
 
     profile.addField(currency, code(this.coins), true);
     profile.addField("Win", code(this.win), true);

@@ -3,6 +3,7 @@ import { Message } from "discord.js";
 import { client } from "../index";
 import { bold } from "../utils";
 import { Player } from "../structure/Player";
+import { Prompt } from "@jiman24/discordjs-prompt";
 
 export default class extends Command {
   name = "create";
@@ -14,8 +15,19 @@ export default class extends Command {
       throw new Error("your character has already been created");
     }
 
+    const prompt = new Prompt(msg);
 
-    const avatarUrl = msg.author.avatarURL() || msg.author.defaultAvatarURL;
+    const collected = await prompt.collect(
+      "Please upload your nft to be used as profile picture"
+    );
+
+    const image = collected.attachments.first();
+
+    if (!image) {
+      throw new Error("no image uploaded");
+    }
+
+    const avatarUrl = image.url;
     const player = new Player(msg.author, avatarUrl);
 
     player.save();

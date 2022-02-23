@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@jiman24/commandment': ^0.4.0
   '@jiman24/discordjs-button': ^0.1.0
+  '@jiman24/discordjs-prompt': ^0.0.1
   '@jiman24/discordjs-rpg': ^3.1.0
   '@types/common-tags': ^1.8.1
   '@types/luxon': ^2.0.8
@@ -17,6 +18,7 @@ specifiers:
 dependencies:
   '@jiman24/commandment': 0.4.0
   '@jiman24/discordjs-button': 0.1.0
+  '@jiman24/discordjs-prompt': 0.0.1
   '@jiman24/discordjs-rpg': 3.1.0
   common-tags: 1.8.2
   discord.js: 13.6.0
@@ -71,6 +73,16 @@ packages:
 
   /@jiman24/discordjs-button/0.1.0:
     resolution: {integrity: sha512-RDddM2bbCM+ovznofI616f4tdvX6IVZhK/1KmNBt7hTGjKYbOpjabVN3mZXKIQzG3KO91syM2Uqm9SWaWh/yYw==}
+    dependencies:
+      discord.js: 13.6.0
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
+    dev: false
+
+  /@jiman24/discordjs-prompt/0.0.1:
+    resolution: {integrity: sha512-tNidOjU7T50HjUduxpTNFkP3NfPRutra7u6yamNG8aR63hutoykqDkacp8vl9vYczUwS++m1mOPC91WIbfRIkg==}
     dependencies:
       discord.js: 13.6.0
     transitivePeerDependencies:

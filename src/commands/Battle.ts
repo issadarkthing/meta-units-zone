@@ -34,8 +34,8 @@ export default class extends Command {
     battleField.players.push(player);
     const players = random.shuffle(battleField.players);
     const middle = (BattleField.maxPlayers / 2);
-    const teamA = { name: "A", fighters: players.slice(0, middle) };
-    const teamB = { name: "B", fighters: players.slice(middle) }
+    const teamA = { name: "Team Red", fighters: players.slice(0, middle) };
+    const teamB = { name: "Team Blue", fighters: players.slice(middle) }
     const playersTeam = teamA.fighters.some(x => x.id === player.id) ? teamA : teamB;
 
     const battle = new TeamBattle(msg, teamA, teamB);

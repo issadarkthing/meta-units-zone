@@ -1,7 +1,7 @@
 import { Command } from "@jiman24/commandment";
 import { Player } from "../structure/Player";
 import { Message } from "discord.js";
-import { Pagination } from "../structure/Pagination";
+import { Pagination } from "@jiman24/discordjs-pagination";
 import { TeamBattle } from "@jiman24/discordjs-rpg";
 import { bold, currency, random } from "../utils";
 import { BattleField } from "../structure/BattleField";
@@ -19,6 +19,8 @@ export default class extends Command {
     const menu = new Pagination(msg, monsters, player.currentMonster);
     let battleField = BattleField.all[0];
     let position = 0;
+
+    menu.setSelectText("Battle");
 
     menu.setOnSelect((x) => {
       battleField = BattleField.all[x];

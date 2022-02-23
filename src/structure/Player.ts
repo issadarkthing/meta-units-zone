@@ -86,11 +86,6 @@ export class Player extends PlayerRPG {
 
     profile.addField(currency, code(this.coins), true);
     profile.addField("Win", code(this.win), true);
-    profile.addField("Hunt", code(this.hunt), true);
-
-    const winHuntPercent = (this.win / this.hunt) || 0;
-    const winHuntStr = (winHuntPercent * 100).toFixed(2) + "%";
-    profile.addField("Win/Hunt %", code(winHuntStr), true);
 
     profile.addField("Level", code(this.level), true);
     profile.addField("xp", `\`${this.xp}/${this.requiredXP()}\``, true);
